@@ -1,15 +1,3 @@
-<?php
-$dsn = "mysql:host=localhost;dbname=open";
-$db = new PDO($dsn, 'root', '1314');
-//查询课程
-$re=$db->query("select * from lesson");
-$lesson = $re->fetchAll(PDO::FETCH_ASSOC);
-//查询报名信息来源
-$re=$db->query("select * from info");
-$info = $re->fetchAll(PDO::FETCH_ASSOC);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
